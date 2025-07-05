@@ -38,19 +38,33 @@ header {
     align-self: stretch;
     width: 100%;
     overflow: hidden;
+    justify-content: center;
+
+}
+
+.top-cont-c {
+    display: flex;
+    width: 90rem;
+    height: 41.9375rem;
+    padding: 3.125rem 6.25rem;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+    row-gap: 7.0625rem;
+    flex-wrap: wrap;
+    max-width: 1440px;
+
 
 }
 
 .top-cont {
-    display: flex;
-    flex-wrap: wrap;
     width: 100%;
-    max-width: 1440px;
-    padding: 3rem;
-    justify-content: space-between;
+    height: 41.9375rem;
     background: linear-gradient(102deg, #2D3E99 0%, #0F1533 100%);
-    margin: 0 auto;
-    height: 41.973rem;
+    display: flex;
+
+    justify-content: center;
+
 }
 
 .top-nav {
@@ -59,6 +73,16 @@ header {
     justify-content: space-between;
     align-items: flex-start;
     flex-shrink: 0;
+    max-width: 1440px;
+}
+
+.top-nav-mid {
+    width: 77.5rem;
+    height: 18.1875rem;
+    display: flex;
+    max-width: 1440px;
+    justify-content: space-between;
+    flex-direction: row;
 }
 
 .head-left {
@@ -69,6 +93,7 @@ header {
     gap: 3.9375rem;
     flex-shrink: 0;
     height: 18.9rem;
+    max-width: 1440px;
 
     h1 {
         color: #FFF;
@@ -183,49 +208,60 @@ header {
 }
 
 .under-cont {
+    background: #F2F7FA;
     display: flex;
     height: 6.75rem;
     padding: 1.375rem 0rem;
     justify-content: center;
     align-items: center;
-    gap: 6.875rem;
     align-self: stretch;
-    background: #F2F7FA;
-    height: 6.5rem;
-    width: 90rem;
-    overflow: hidden;
+    gap: 6.875rem;
 
-    img::nth-child(1) {
-        width: 3.5rem;
-        height: 1.375rem;
-    }
+    .under-cont-c {
+        width: 70rem;
+        display: flex;
+        flex-direction: row;
+        gap: 6.875rem;
+        align-self: flex-start;
 
-    img::nth-child(2) {
-        width: 7.625rem;
-        height: 1.75rem;
-    }
+        img::nth-child(1) {
+            width: 3.5rem;
+            height: 1.375rem;
+        }
 
-    img::nth-child(3) {
-        width: 7.9375rem;
-        height: 1.75rem;
-    }
+        img::nth-child(2) {
+            width: 7.625rem;
+            height: 1.75rem;
+        }
 
-    img::nth-child(4) {
-        width: 9.875rem;
-        height: 1.75rem;
-    }
+        img::nth-child(3) {
+            width: 7.9375rem;
+            height: 1.75rem;
+        }
 
-    img::nth-child(5) {
-        width: 3.5rem;
-        height: 1.375rem;
-    }
+        img::nth-child(4) {
+            width: 9.875rem;
+            height: 1.75rem;
+        }
 
-    img::nth-child(6) {
-        width: 7.625rem;
-        height: 1.75rem;
+        img::nth-child(5) {
+            width: 3.5rem;
+            height: 1.375rem;
+        }
+
+        img::nth-child(6) {
+            width: 7.625rem;
+            height: 1.75rem;
+        }
     }
 
 }
+
+
+
+
+
+
 
 .cont2 {
     display: flex;
@@ -685,483 +721,489 @@ header {
     align-items: center;
     gap: 0.75rem;
     align-self: stretch;
-    max-width: 1440px;
-    height: 39.5rem;
-    width: 100%;
+    flex-direction: row;
+    justify-content: center;
 
-
-    .pack-1 {
+    .cont5-c {
         display: flex;
-        width: 25.3125rem;
-        height: 39.5rem;
-        padding: 0.75rem;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0.875rem;
-        /* overflow: hidden; */
-        border-radius: 1.875rem;
-        border: 1px solid #C2C2C2;
-        background: #E5E0EB;
+        justify-content: center;
 
-        .cont-fr {
+
+
+        width: 80rem;
+
+        .pack-1 {
             display: flex;
-            width: 23.8125rem;
-            height: 29.4375rem;
-            padding: 3.5625rem 3.0625rem;
-            gap: 0.625rem;
-            flex-shrink: 0;
+            width: 25.3125rem;
+            height: 39.5rem;
+            padding: 0.75rem;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 0.875rem;
+            /* overflow: hidden; */
             border-radius: 1.875rem;
             border: 1px solid #C2C2C2;
-            background: #FFF;
-            flex-direction: column;
-            position: relative;
+            background: #E5E0EB;
 
-
-
-            .heading {
+            .cont-fr {
                 display: flex;
-                height: 2.8125rem;
-                padding: 0.875rem 1.5rem;
-
-                align-items: center;
+                width: 23.8125rem;
+                height: 29.4375rem;
+                padding: 3.5625rem 3.0625rem;
                 gap: 0.625rem;
-                position: absolute;
-                left: 1.5rem;
-                top: 1.5rem;
+                flex-shrink: 0;
                 border-radius: 1.875rem;
-                background: #2D3E99;
-                color: #FFF;
-                font-family: "Uxum Grotesque";
-                font-size: 1.06556rem;
-                font-style: normal;
-                font-weight: 400;
-                line-height: normal;
+                border: 1px solid #C2C2C2;
+                background: #FFF;
+                flex-direction: column;
+                position: relative;
+
+
+
+                .heading {
+                    display: flex;
+                    height: 2.8125rem;
+                    padding: 0.875rem 1.5rem;
+
+                    align-items: center;
+                    gap: 0.625rem;
+                    position: absolute;
+                    left: 1.5rem;
+                    top: 1.5rem;
+                    border-radius: 1.875rem;
+                    background: #2D3E99;
+                    color: #FFF;
+                    font-family: "Uxum Grotesque";
+                    font-size: 1.06556rem;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+
+                .buy2 {
+                    display: flex;
+                    width: 21.375rem;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    img {
+                        border-radius: 1.375rem;
+                        background: #FFF;
+                        padding: 10px;
+                        width: 2.75rem;
+                        height: 2.75rem;
+
+                    }
+
+                    button {
+                        display: flex;
+                        width: 11.625rem;
+                        height: 3.375rem;
+                        padding: 0.3125rem;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 2.625rem;
+                        flex-shrink: 0;
+                        border-radius: 1.875rem;
+                        border: 1px solid #C2C2C2;
+                        background: #E5E0EB;
+                        overflow: hidden;
+                        cursor: pointer;
+
+                    }
+
+                    div {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: flex-end;
+                        color: #000;
+                        font-family: "Uxum Grotesque";
+                        font-size: 0.75rem;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        position: relative;
+
+                        span {
+                            color: #2D3E99;
+                            font-family: "Uxum Grotesque";
+                            font-size: 2.37131rem;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                        }
+
+                    }
+
+                }
+
             }
 
-            .buy2 {
+            .pu-time {
                 display: flex;
-                width: 21.375rem;
+                width: 23.8125rem;
                 justify-content: space-between;
-                align-items: center;
+                align-items: flex-start;
 
-                img {
-                    border-radius: 1.375rem;
+                span {
+                    color: #2D3E99;
+                    font-family: "Uxum Grotesque";
+                    font-size: 1.06556rem;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+            }
+
+            .sub-sv {
+                display: flex;
+                align-items: center;
+                gap: 0.75rem;
+
+                span {
+                    color: #2D3E99;
+                    font-family: "Uxum Grotesque";
+                    font-size: 1.06556rem;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+            }
+
+            .buy1 {
+                button {
+                    width: 23.8125rem;
+                    height: 3.625rem;
+                    flex-shrink: 0;
+                    border-radius: 11.25rem;
+                    border: 1px solid #C2C2C2;
                     background: #FFF;
-                    padding: 10px;
-                    width: 2.75rem;
-                    height: 2.75rem;
-
-                }
-
-                button {
-                    display: flex;
-                    width: 11.625rem;
-                    height: 3.375rem;
-                    padding: 0.3125rem;
-                    justify-content: center;
-                    align-items: center;
-                    gap: 2.625rem;
-                    flex-shrink: 0;
-                    border-radius: 1.875rem;
-                    border: 1px solid #C2C2C2;
-                    background: #E5E0EB;
-                    overflow: hidden;
-                    cursor: pointer;
-
-                }
-
-                div {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: flex-end;
-                    color: #000;
+                    color: #2D3E99;
+                    text-align: center;
                     font-family: "Uxum Grotesque";
-                    font-size: 0.75rem;
+                    font-size: 1rem;
                     font-style: normal;
-                    font-weight: 400;
-                    line-height: normal;
-                    position: relative;
-
-                    span {
-                        color: #2D3E99;
-                        font-family: "Uxum Grotesque";
-                        font-size: 2.37131rem;
-                        font-style: normal;
-                        font-weight: 400;
-                        line-height: normal;
-                    }
-
+                    font-weight: 500;
+                    line-height: 1.5rem;
+                    cursor: pointer;
                 }
-
             }
-
         }
 
-        .pu-time {
+        .pack-2 {
             display: flex;
-            width: 23.8125rem;
-            justify-content: space-between;
+            width: 25.3125rem;
+            height: 39.5rem;
+            padding: 0.75rem;
+            flex-direction: column;
             align-items: flex-start;
-
-            span {
-                color: #2D3E99;
-                font-family: "Uxum Grotesque";
-                font-size: 1.06556rem;
-                font-style: normal;
-                font-weight: 400;
-                line-height: normal;
-            }
-        }
-
-        .sub-sv {
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-
-            span {
-                color: #2D3E99;
-                font-family: "Uxum Grotesque";
-                font-size: 1.06556rem;
-                font-style: normal;
-                font-weight: 400;
-                line-height: normal;
-            }
-        }
-
-        .buy1 {
-            button {
-                width: 23.8125rem;
-                height: 3.625rem;
-                flex-shrink: 0;
-                border-radius: 11.25rem;
-                border: 1px solid #C2C2C2;
-                background: #FFF;
-                color: #2D3E99;
-                text-align: center;
-                font-family: "Uxum Grotesque";
-                font-size: 1rem;
-                font-style: normal;
-                font-weight: 500;
-                line-height: 1.5rem;
-                cursor: pointer;
-            }
-        }
-    }
-
-    .pack-2 {
-        display: flex;
-        width: 25.3125rem;
-        height: 39.5rem;
-        padding: 0.75rem;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0.875rem;
-        /* overflow: hidden; */
-        border-radius: 1.875rem;
-        border: 1px solid #C2C2C2;
-        background: #E5E0EB;
-
-        .cont-fr {
-            display: flex;
-            width: 23.8125rem;
-            height: 29.4375rem;
-            padding: 3.5625rem 3.0625rem;
-            gap: 0.625rem;
-            flex-shrink: 0;
+            gap: 0.875rem;
+            /* overflow: hidden; */
             border-radius: 1.875rem;
             border: 1px solid #C2C2C2;
-            background: #FFF;
-            flex-direction: column;
-            position: relative;
+            background: #E5E0EB;
 
-
-
-            .heading {
+            .cont-fr {
                 display: flex;
-                height: 2.8125rem;
-                padding: 0.875rem 1.5rem;
-
-                align-items: center;
+                width: 23.8125rem;
+                height: 29.4375rem;
+                padding: 3.5625rem 3.0625rem;
                 gap: 0.625rem;
-                position: absolute;
-                left: 1.5rem;
-                top: 1.5rem;
+                flex-shrink: 0;
                 border-radius: 1.875rem;
-                background: #2D3E99;
-                color: #FFF;
-                font-family: "Uxum Grotesque";
-                font-size: 1.06556rem;
-                font-style: normal;
-                font-weight: 400;
-                line-height: normal;
-            }
+                border: 1px solid #C2C2C2;
+                background: #FFF;
+                flex-direction: column;
+                position: relative;
 
-            .buy2 {
-                display: flex;
-                width: 21.375rem;
-                justify-content: space-between;
-                align-items: center;
 
-                button {
+
+                .heading {
                     display: flex;
-                    width: 11.625rem;
-                    height: 3.375rem;
-                    padding: 0.3125rem;
-                    justify-content: center;
+                    height: 2.8125rem;
+                    padding: 0.875rem 1.5rem;
+
                     align-items: center;
-                    gap: 2.625rem;
-                    flex-shrink: 0;
+                    gap: 0.625rem;
+                    position: absolute;
+                    left: 1.5rem;
+                    top: 1.5rem;
                     border-radius: 1.875rem;
-                    border: 1px solid #C2C2C2;
-                    background: #E5E0EB;
-                    overflow: hidden;
-                    cursor: pointer;
-
-                }
-
-                div {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: flex-end;
-                    color: #000;
+                    background: #2D3E99;
+                    color: #FFF;
                     font-family: "Uxum Grotesque";
-                    font-size: 0.75rem;
+                    font-size: 1.06556rem;
                     font-style: normal;
                     font-weight: 400;
                     line-height: normal;
-                    position: relative;
+                }
 
-                    span {
-                        color: #2D3E99;
+                .buy2 {
+                    display: flex;
+                    width: 21.375rem;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    button {
+                        display: flex;
+                        width: 11.625rem;
+                        height: 3.375rem;
+                        padding: 0.3125rem;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 2.625rem;
+                        flex-shrink: 0;
+                        border-radius: 1.875rem;
+                        border: 1px solid #C2C2C2;
+                        background: #E5E0EB;
+                        overflow: hidden;
+                        cursor: pointer;
+
+                    }
+
+                    div {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: flex-end;
+                        color: #000;
                         font-family: "Uxum Grotesque";
-                        font-size: 2.37131rem;
+                        font-size: 0.75rem;
                         font-style: normal;
                         font-weight: 400;
                         line-height: normal;
+                        position: relative;
+
+                        span {
+                            color: #2D3E99;
+                            font-family: "Uxum Grotesque";
+                            font-size: 2.37131rem;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                        }
+
                     }
 
                 }
 
             }
 
-        }
-
-        .pu-time {
-            display: flex;
-            width: 23.8125rem;
-            justify-content: space-between;
-            align-items: flex-start;
-
-            span {
-                color: #2D3E99;
-                font-family: "Uxum Grotesque";
-                font-size: 1.06556rem;
-                font-style: normal;
-                font-weight: 400;
-                line-height: normal;
-            }
-        }
-
-        .sub-sv {
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-
-            span {
-                color: #2D3E99;
-                font-family: "Uxum Grotesque";
-                font-size: 1.06556rem;
-                font-style: normal;
-                font-weight: 400;
-                line-height: normal;
-            }
-        }
-
-        .buy1 {
-            button {
+            .pu-time {
+                display: flex;
                 width: 23.8125rem;
-                height: 3.625rem;
-                flex-shrink: 0;
-                border-radius: 11.25rem;
-                border: 1px solid #C2C2C2;
-                background: #FFF;
-                color: #2D3E99;
-                text-align: center;
-                font-family: "Uxum Grotesque";
-                font-size: 1rem;
-                font-style: normal;
-                font-weight: 500;
-                line-height: 1.5rem;
-                cursor: pointer;
+                justify-content: space-between;
+                align-items: flex-start;
+
+                span {
+                    color: #2D3E99;
+                    font-family: "Uxum Grotesque";
+                    font-size: 1.06556rem;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+            }
+
+            .sub-sv {
+                display: flex;
+                align-items: center;
+                gap: 0.75rem;
+
+                span {
+                    color: #2D3E99;
+                    font-family: "Uxum Grotesque";
+                    font-size: 1.06556rem;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+            }
+
+            .buy1 {
+                button {
+                    width: 23.8125rem;
+                    height: 3.625rem;
+                    flex-shrink: 0;
+                    border-radius: 11.25rem;
+                    border: 1px solid #C2C2C2;
+                    background: #FFF;
+                    color: #2D3E99;
+                    text-align: center;
+                    font-family: "Uxum Grotesque";
+                    font-size: 1rem;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 1.5rem;
+                    cursor: pointer;
+                }
             }
         }
-    }
 
-    .pack-3 {
-        display: flex;
-        width: 25.3125rem;
-        height: 39.5rem;
-        padding: 0.75rem;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0.875rem;
-        /* overflow: hidden; */
-        border-radius: 1.875rem;
-        border: 1px solid #C2C2C2;
-        background: #E5E0EB;
-
-        .cont-fr {
+        .pack-3 {
             display: flex;
-            width: 23.8125rem;
-            height: 29.4375rem;
-            padding: 3.5625rem 3.0625rem;
-            gap: 0.625rem;
-            flex-shrink: 0;
+            width: 25.3125rem;
+            height: 39.5rem;
+            padding: 0.75rem;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 0.875rem;
+            /* overflow: hidden; */
             border-radius: 1.875rem;
             border: 1px solid #C2C2C2;
-            background: #FFF;
-            flex-direction: column;
-            position: relative;
+            background: #E5E0EB;
 
-
-
-            .heading {
+            .cont-fr {
                 display: flex;
-                height: 2.8125rem;
-                padding: 0.875rem 1.5rem;
-
-                align-items: center;
+                width: 23.8125rem;
+                height: 29.4375rem;
+                padding: 3.5625rem 3.0625rem;
                 gap: 0.625rem;
-                position: absolute;
-                left: 1.5rem;
-                top: 1.5rem;
+                flex-shrink: 0;
                 border-radius: 1.875rem;
-                background: #2D3E99;
-                color: #FFF;
-                font-family: "Uxum Grotesque";
-                font-size: 1.06556rem;
-                font-style: normal;
-                font-weight: 400;
-                line-height: normal;
-            }
+                border: 1px solid #C2C2C2;
+                background: #FFF;
+                flex-direction: column;
+                position: relative;
 
-            .buy2 {
-                display: flex;
-                width: 21.375rem;
-                justify-content: space-between;
-                align-items: center;
 
-                button {
+
+                .heading {
                     display: flex;
-                    width: 11.625rem;
-                    height: 3.375rem;
-                    padding: 0.3125rem;
-                    justify-content: center;
+                    height: 2.8125rem;
+                    padding: 0.875rem 1.5rem;
+
                     align-items: center;
-                    gap: 2.625rem;
-                    flex-shrink: 0;
+                    gap: 0.625rem;
+                    position: absolute;
+                    left: 1.5rem;
+                    top: 1.5rem;
                     border-radius: 1.875rem;
-                    border: 1px solid #C2C2C2;
-                    background: #E5E0EB;
-                    overflow: hidden;
-                    cursor: pointer;
-                }
-
-                div {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: flex-end;
-                    color: #000;
+                    background: #2D3E99;
+                    color: #FFF;
                     font-family: "Uxum Grotesque";
-                    font-size: 0.75rem;
+                    font-size: 1.06556rem;
                     font-style: normal;
                     font-weight: 400;
                     line-height: normal;
-                    position: relative;
+                }
 
-                    span {
-                        color: #2D3E99;
+                .buy2 {
+                    display: flex;
+                    width: 21.375rem;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    button {
+                        display: flex;
+                        width: 11.625rem;
+                        height: 3.375rem;
+                        padding: 0.3125rem;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 2.625rem;
+                        flex-shrink: 0;
+                        border-radius: 1.875rem;
+                        border: 1px solid #C2C2C2;
+                        background: #E5E0EB;
+                        overflow: hidden;
+                        cursor: pointer;
+                    }
+
+                    div {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: flex-end;
+                        color: #000;
                         font-family: "Uxum Grotesque";
-                        font-size: 2.37131rem;
+                        font-size: 0.75rem;
                         font-style: normal;
                         font-weight: 400;
                         line-height: normal;
+                        position: relative;
+
+                        span {
+                            color: #2D3E99;
+                            font-family: "Uxum Grotesque";
+                            font-size: 2.37131rem;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                        }
+
                     }
 
                 }
 
             }
 
-        }
-
-        .pu-time {
-            display: flex;
-            width: 23.8125rem;
-            justify-content: space-between;
-            align-items: flex-start;
-
-            span {
-                color: #2D3E99;
-                font-family: "Uxum Grotesque";
-                font-size: 1.06556rem;
-                font-style: normal;
-                font-weight: 400;
-                line-height: normal;
-            }
-        }
-
-        .sub-sv {
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-
-            span {
-                color: #2D3E99;
-                font-family: "Uxum Grotesque";
-                font-size: 1.06556rem;
-                font-style: normal;
-                font-weight: 400;
-                line-height: normal;
-            }
-        }
-
-        .buy1 {
-            button {
+            .pu-time {
+                display: flex;
                 width: 23.8125rem;
-                height: 3.625rem;
-                flex-shrink: 0;
-                border-radius: 11.25rem;
-                border: 1px solid #C2C2C2;
-                background: #FFF;
-                color: #2D3E99;
-                text-align: center;
-                font-family: "Uxum Grotesque";
-                font-size: 1rem;
-                font-style: normal;
-                font-weight: 500;
-                line-height: 1.5rem;
-                cursor: pointer;
+                justify-content: space-between;
+                align-items: flex-start;
+
+                span {
+                    color: #2D3E99;
+                    font-family: "Uxum Grotesque";
+                    font-size: 1.06556rem;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+            }
+
+            .sub-sv {
+                display: flex;
+                align-items: center;
+                gap: 0.75rem;
+
+                span {
+                    color: #2D3E99;
+                    font-family: "Uxum Grotesque";
+                    font-size: 1.06556rem;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+            }
+
+            .buy1 {
+                button {
+                    width: 23.8125rem;
+                    height: 3.625rem;
+                    flex-shrink: 0;
+                    border-radius: 11.25rem;
+                    border: 1px solid #C2C2C2;
+                    background: #FFF;
+                    color: #2D3E99;
+                    text-align: center;
+                    font-family: "Uxum Grotesque";
+                    font-size: 1rem;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 1.5rem;
+                    cursor: pointer;
+                }
             }
         }
-    }
 
-    .fr-image2 {
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
-        gap: -20rem;
-    }
+        .fr-image2 {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            gap: -20rem;
+        }
 
-    .fr-image3 {
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
-        gap: -10rem;
+        .fr-image3 {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            gap: -10rem;
+        }
     }
-
 }
 
 
@@ -1233,205 +1275,203 @@ header {
     align-items: center;
     gap: 2.625rem;
     align-self: stretch;
+    justify-content: center;
 
-    h1 {
-        align-self: stretch;
-        color: var(--Base-02, #090914);
-        font-family: "Uxum Grotesque";
-        font-size: 3rem;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        display: flex;
-        width: 67.875rem;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 1.5rem;
-    }
-
-    .cont7-frm {
-        display: flex;
-        align-items: center;
-        gap: 2.625rem;
-
-        .cont7-fr1 {
-            width: 20.875rem;
-            height: 35.5rem;
-            border-radius: 0rem 0rem 1.25rem 1.25rem;
-            opacity: 0.8;
-            background-image: url(/images/cont7-img1.png);
-            cursor: pointer;
-
-        }
-
-        .cont7-fr2 {
-            width: 20.875rem;
-            height: 35.5rem;
-            border-radius: 0rem 0rem 1.25rem 1.25rem;
-            opacity: 0.8;
-            background-image: url(/images/cont7-img2.png);
-            cursor: pointer;
-
-        }
-
-        .cont7-fr3 {
-            width: 20.875rem;
-            height: 35.5rem;
-            border-radius: 0rem 0rem 1.25rem 1.25rem;
-            opacity: 0.8;
-            background-image: url(/images/cont7-img3.png);
-            cursor: pointer;
-        }
-    }
-}
+    .cont7-c {
+        width: 76rem;
 
 
 
-
-
-
-
-
-.cont8 {
-    display: flex;
-    padding: 0rem 6.25rem;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.625rem;
-    align-self: stretch;
-    position: relative;
-
-    .cont8-div {
-        display: flex;
-        width: 77.5rem;
-        align-items: flex-start;
-        flex-direction: row;
-        overflow: hidden;
-
-
-        .cont8-bg {
-            width: 77.5rem;
-            height: 24.26869rem;
-            position: absolute;
-            top: 3.16881rem;
-            fill: linear-gradient(90deg, #255296 0%, #E5E0EB 100%);
-        }
-
-        img {
-            width: 29.5rem;
-            height: 18.375rem;
-            position: absolute;
-            right: 4.3125rem;
-
-        }
-
-        .main-cont {
+        h1 {
+            align-self: stretch;
+            color: var(--Base-02, #090914);
+            font-family: "Uxum Grotesque";
+            font-size: 3rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
             display: flex;
+            width: 67.875rem;
             flex-direction: column;
             align-items: flex-start;
             gap: 1.5rem;
-
-            h1 {
-                color: #FFF;
-
-                /* Primary Text/Heading */
-                font-family: "Uxum Grotesque";
-                font-size: 3rem;
-                font-style: normal;
-                font-weight: 400;
-                line-height: normal;
-                width: 30.9375rem;
-            }
-
-            .main-lists {
-                display: flex;
-                width: 30.9375rem;
-                flex-direction: column;
-                align-items: flex-start;
-                gap: 0.5rem;
-
-                p {
-                    align-self: stretch;
-                    color: #FFF;
-                    font-family: 'AktivGrotesk-Light';
-                    font-size: 1.125rem;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: 166.667%;
-                }
-
-                ul {
-                    align-self: stretch;
-                    color: #FFF;
-                    font-family: 'AktivGrotesk-Light';
-                    font-size: 1.125rem;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: 166.667%;
-                    color: #FFF;
-                    font-family: AktivGrotesk-Light;
-                    font-size: 1.125rem;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: 166.667%;
-                }
-            }
-
-
         }
 
-        .em-btn {
-            position: absolute;
-            right: 4.3125rem;
-            bottom: 3.8125rem;
+        .cont7-frm {
             display: flex;
             align-items: center;
-            gap: 0.75rem;
+            gap: 2.625rem;
 
-            p {
-                color: #FFF;
-                font-family: 'AktivGrotesk-Light';
-                font-size: 1.125rem;
-                font-style: normal;
-                font-weight: 400;
-                line-height: 166.667%;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-self: stretch;
-                display: flex;
-                width: 21.125rem;
-                height: 3.75rem;
-                padding: 0.9375rem 1.5625rem;
-                align-items: center;
-                gap: 0.625rem;
-                border-radius: 1.25rem;
-                border: 1px solid #FFF;
+            .cont7-fr1 {
+                width: 20.875rem;
+                height: 35.5rem;
+                border-radius: 0rem 0rem 1.25rem 1.25rem;
+                opacity: 0.8;
+                background-image: url(/images/cont7-img1.png);
+                cursor: pointer;
+
             }
 
-            button {
-                display: flex;
-                width: 7.625rem;
-                height: 3.75rem;
-                padding: 0.9375rem 1.9375rem;
-                justify-content: center;
-                align-items: center;
-                gap: 0.625rem;
-                border-radius: 1.25rem;
-                background: #323B4B;
-                color: #FFF;
-                font-family: 'AktivGrotesk-Medium';
-                font-size: 1.125rem;
-                font-style: normal;
-                font-weight: 400;
-                line-height: 166.667%;
+            .cont7-fr2 {
+                width: 20.875rem;
+                height: 35.5rem;
+                border-radius: 0rem 0rem 1.25rem 1.25rem;
+                opacity: 0.8;
+                background-image: url(/images/cont7-img2.png);
+                cursor: pointer;
+
+            }
+
+            .cont7-fr3 {
+                width: 20.875rem;
+                height: 35.5rem;
+                border-radius: 0rem 0rem 1.25rem 1.25rem;
+                opacity: 0.8;
+                background-image: url(/images/cont7-img3.png);
                 cursor: pointer;
             }
         }
     }
-
-
 }
+
+
+
+
+
+
+
+
+.cont8-c {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    position: relative;
+    min-height: 28rem;
+    z-index: 1;
+}
+
+.cont8-c svg {
+    position: absolute;
+    /* left: 0; */
+    top: 0;
+    width: 77.5rem;
+    height: 24.4375rem;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.cont-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+    z-index: 1;
+    background: none;
+    position: static;
+    left: auto;
+    bottom: auto;
+    width: 50%;
+    min-width: 22rem;
+}
+
+.cont-right h1 {
+    color: #FFF;
+    font-family: "Uxum Grotesque";
+    font-size: 2.5rem;
+    font-weight: 400;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+}
+
+.cont-right p {
+    color: #FFF;
+    font-family: 'AktivGrotesk-Light';
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+}
+
+.cont-right ul {
+    color: #FFF;
+    font-family: 'AktivGrotesk-Light';
+    font-size: 1.125rem;
+    margin-left: 1.5rem;
+    margin-bottom: 0;
+    list-style: disc;
+}
+
+.cont-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    width: 50%;
+    min-width: 22rem;
+    z-index: 1;
+    background: none;
+    position: static;
+    right: auto;
+    top: auto;
+}
+
+.cont-left img {
+    width: 22rem;
+    height: auto;
+    margin-bottom: 2rem;
+    border-radius: 1.25rem;
+    /* box-shadow: 0 8px 32px rgba(0, 0, 0, 0.10); */
+}
+
+.cont-left div {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    /* background: rgba(255, 255, 255, 0.15); */
+    border-radius: 1.25rem;
+    padding: 0.25rem;
+    width: 100%;
+    max-width: 27rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.cont-left input[type="email"] {
+    flex: 1;
+    height: 3.2rem;
+    border: none;
+    border-radius: 1.25rem 0 0 1.25rem;
+    padding: 0 1.5rem;
+    font-size: 1.1rem;
+    font-family: 'AktivGrotesk-Light';
+    outline: none;
+    background: rgba(255, 255, 255, 0);
+    color: #323B4B;
+    border-radius: 1.25rem;
+    border: 1px solid #FFF;
+    width: 3.75rem;
+}
+
+.cont-left button {
+    height: 3.2rem;
+    padding: 0 2rem;
+    border: none;
+    border-radius: 0 1.25rem 1.25rem 0;
+    background: #323B4B;
+    color: #FFF;
+    font-family: 'AktivGrotesk-Medium';
+    font-size: 1.125rem;
+    cursor: pointer;
+    transition: background 0.2s;
+    border-radius: 1.25rem;
+    background: #323B4B;
+}
+
+.cont-left button:hover {
+    background: #255296;
+}
+
 
 
 
@@ -2164,9 +2204,6 @@ div.pack-1:nth-child(2)>div:nth-child(1)>div:nth-child(3) {
 
 
 
-.cont8 {
-    margin-left: -38px;
-}
 
 
 .cont8-div>img:nth-child(2) {
@@ -2214,7 +2251,7 @@ div.pack-1:nth-child(2)>div:nth-child(1)>div:nth-child(3) {
 }
 
 
-/* Element | http://127.0.0.1:5500/ */
+
 
 .safe>div:nth-child(2) {
     margin-left: -1px;
@@ -2273,8 +2310,123 @@ div.pack-1:nth-child(2)>div:nth-child(1)>div:nth-child(3) {
     margin-left: -19px;
 }
 
-/* Element | http://127.0.0.1:5500/ */
-
 .frame1>h1:nth-child(1) {
     margin-bottom: 84px;
+}
+
+
+
+
+
+
+.cont8-c svg {
+    /* top: 0; */
+    /* width: 77.5rem; */
+    /* height: 24.4375rem; */
+    width: 63.5rem;
+    height: 28.438rem;
+}
+
+
+
+.cont-right {
+    /* left: auto; */
+    /* bottom: auto; */
+    /* width: 50%; */
+    width: 31rem;
+}
+
+.cont8-c {
+    /* min-height: 28rem; */
+    min-height: 35rem;
+    width: 78rem;
+}
+
+.cont8-c svg {
+    /* height: 24.4375rem; */
+    height: 30.438rem;
+}
+
+.cont-left {
+    /* gap: 2rem; */
+    /* width: 50%; */
+    /* right: auto; */
+    /* top: auto; */
+    width: 31rem;
+    height: 22rem;
+}
+
+.cont-left img {
+    /* width: 22rem; */
+    /* height: auto; */
+    /* box-shadow: 0 8px 32px rgba(0, 0, 0, 0.10); */
+    width: 37rem;
+    height: 32.375rem;
+}
+
+
+
+.cont-right {
+    margin-left: 65px;
+    margin-top: -65px;
+}
+
+
+.cont-left {
+    margin-top: -73px;
+}
+
+
+
+.cont-left>img:nth-child(1) {
+    margin-top: -84px;
+    margin-right: 67px;
+    margin-bottom: -8rem;
+}
+
+
+.cont-left>div:nth-child(2) {
+    margin-bottom: 20px;
+    margin-right: 98px;
+}
+
+.cont8-c svg {
+    /* height: 24.4375rem; */
+    /* height: 30.438rem; */
+    height: 35.438rem;
+    height: 34.438rem;
+}
+
+.cont8-c {
+    height: 40rem;
+}
+
+.cont8-c svg {
+    /* width: 63.5rem; */
+    width: 78.5rem;
+}
+
+.cont-left img {
+    /* width: 37rem; */
+    /* height: 32.375rem; */
+    width: 40rem;
+    height: 36.375rem;
+}
+
+.cont-left div {
+    /* background: rgba(255, 255, 255, 0.15); */
+}
+
+
+.cont-left>img:nth-child(1) {
+    margin-top: -93px;
+    margin-right: 112px;
+}
+
+
+
+.cont-left>div:nth-child(2) {
+    margin-bottom: 46px;
+    margin-top: -48px;
+    margin-right: 105px;
 }
