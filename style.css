@@ -2430,3 +2430,12 @@ div.pack-1:nth-child(2)>div:nth-child(1)>div:nth-child(3) {
     margin-top: -48px;
     margin-right: 105px;
 }
+
+/* Element | http://127.0.0.1:5500/ */
+
+.cont7-c>h1:nth-child(1) {
+    margin-right: 0px;
+    margin-left: 63px;
+    margin-top: -4px;
+    margin-bottom: 22px;
+}
